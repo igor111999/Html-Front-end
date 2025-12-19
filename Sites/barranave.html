@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <nav class="navv">
+        <style>
+            .navv {
+                width: 200px;
+                /* Largura da barra de navegação */
+                background-color: goldenrod;
+                /* Cor de fundo */
+                position: fixed;
+                /* Fixa a barra na lateral */
+                height: 10%;
+                /* Ocupa toda a altura da tela */
+            }
+            
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 20px;
+                background-color: goldenrod;
+            }
+            
+            nav li a {
+                display: block;
+                /* Transforma os links em blocos */
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+            }
+            
+            .navli a:hover {
+                background-color: #555;
+                /* Efeito ao passar o mouse */
+                color: goldenrod;
+            }
+        </style>
+        <ul>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+
+            <li class="navli"><a href="#">link1</a></li>
+
+        </ul>
+        <ul>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+
+            <li class="navli"><a href="#">link1</a></li>
+
+        </ul>
+        <ul>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+            <li class="navli"><a href="#">link1</a></li>
+
+            <li class="navli"><a href="#">link1</a></li>
+
+        </ul>
+
+
+    </nav>
+    <header class="header">
+        <style>
+            .header {
+                font-family: "Raleway", sans-serif;
+                background: goldenrod;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem 7%;
+                border-bottom: var(--border);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
+            
+            .header .logo img {
+                height: 6.5rem;
+                border-radius: 100%;
+            }
+            
+            .header .navbar a {
+                margin: 0 1rem;
+                font-size: 1.6rem;
+                color: #fff;
+                font-family: "Raleway", sans-serif;
+            }
+            
+            .header .navbar a:hover {
+                color: blueviolet;
+                border-bottom: 0.1rem solid blueviolet;
+                padding-bottom: 0.5rem;
+            }
+            
+            .header .icons {
+                display: flex;
+                align-items: center;
+            }
+            
+            .header .icons div {
+                margin-left: 2rem;
+            }
+            
+            .header .icons div ion-icon {
+                color: #fff;
+                cursor: pointer;
+                font-size: 2.5rem;
+            }
+            
+            .header .icons div ion-icon:hover {
+                color: var(--main-color);
+            }
+            
+            #menu-btn {
+                display: none;
+            }
+        </style>
+        <a href="#" class="logo">
+            <img src="images/OV.jpg" alt="Logo da pizzaria PizzaHash">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#menu">Menu</a>
+            <a href="#contatos">Contatos</a>
+            <a href="#review">Avaliações</a>
+        </nav>
+
+        <div class="icons">
+            <div>
+                <ion-icon name="person"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="search"></ion-icon>
+            </div>
+            <div>
+                <ion-icon name="cart"></ion-icon>
+            </div>
+            <div id="menu-btn">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
