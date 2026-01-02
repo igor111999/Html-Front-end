@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Footer</title>
+    <style>
+        /* Estilos básicos para visualização */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o footer fique embaixo */
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Conteúdo Principal</h1>
+        <p>Este é o corpo principal da página.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+        <p>
+            <a href="/privacidade">Política de Privacidade</a> |
+            <a href="/termos">Termos de Uso</a> |
+            <a href="mailto:contato@minhaempresa.com">Contato</a>
+        </p>
+        <address>
+            <small>Endereço: Rua Exemplo, 123 - Cidade</small>
+        </address>
+    </footer>
+
+</body>
+</html>

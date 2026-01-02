@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.menu-container {
+  display: flex; /* Organiza os itens horizontalmente */
+  gap: 10px; /* Espaço entre os itens */
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Esconde o texto extra inicialmente */
+  width: 60px; /* Largura inicial (apenas o ícone visível) */
+  height: 60px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: width 0.5s ease; /* Adiciona transição suave para a largura */
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.menu-item:hover {
+  width: 200px; /* Aumenta a largura para revelar o texto ao passar o mouse */
+ overflow: hidden; /* Esconde o texto extra inicialmente */
+  width: 60px; /* Largura inicial (apenas o ícone visível) */
+}
+
+.card-content {
+  /* Garante que o ícone mantenha sua posição */
+  min-width: 30px; 
+}
+
+.icon {
+  font-size: 24px;
+  display: block;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="menu-container">
+    <div class="menu-item">
+        <div class="card-content">
+        <!-- Conteúdo inicial do card (ex: ícone) -->
+        <span class="icon">🏠</span>
+        </div>
+        <div class="menu-text">
+        <!-- Texto do menu que aparece -->
+        Início
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="card-content">
+        <span class="icon">⚙️</span>
+        </div>
+        <div class="menu-text">
+        Configurações
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="card-content">
+        <span class="icon">👤</span>
+        </div>
+        <div class="menu-text">
+        Perfil
+        </div>
+    </div>
+    </nav>
+</body>
+</html>

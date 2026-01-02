@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel-container {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    min-width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+    <div class="carousel-track">
+
+        <div class="card">
+            <h5>OUTLET</h5>
+            <img src="{{url_for('static', filename='imgs/OV.jpg')}}">
+            <p>Loja Online</p>
+        </div>
+
+        <div class="card">
+            <h5>ITALO PERSONAL</h5>
+            <img src="{{url_for('static', filename='imgs/ita.png')}}">
+            <p>Treinos personalizados</p>
+        </div>
+
+        <div class="card">
+            <h5>AULAS PARTICULARES</h5>
+            <img src="{{url_for('static', filename='imgs/ms.png')}}">
+            <a href="{{ url_for('igor') }}">Entre em contato</a>
+        </div>
+
+        <div class="card">
+            <h5>AULAS</h5>
+            <img src="{{url_for('static', filename='imgs/you.png')}}">
+            <a href="https://www.youtube.com/">Youtube</a>
+        </div>
+                    <div class="card">
+                <h5>AULAS</h5>
+                <img src="{{url_for('static', filename='imgs/you.png')}}">
+                <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+
+        <!-- continue com os outros cards -->
+        
+    </div>
+</div>
+
+</body>
+</html>
